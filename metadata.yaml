@@ -1,0 +1,45 @@
+homepage: "https://www.awin.com"
+documentation: "https://www.awin.com"
+versions:
+# Latest version
+  - sha: 81344ca07ca7d1aa3f8ae8cdf0e05eab8d10000f
+    changeNotes: Updated template to not use "Using All Pages Trigger" checkbox as it was redundant.
+# Older versions
+  - sha: 706c18199c0565063551c0e30953691b792b31a7
+    changeNotes: Fixed session cookie behavior in safari.
+  - sha: b8b08cdef748b24f2d3eaa572e52230a7ce5ba70
+    changeNotes: Tag does not default to "undefined" anymore.
+  - sha: 866ba43822d4426872ae57cf78bdd8850c1ac645
+    changeNotes: Updated the tag to better detect and report when a user is coming from a direct or organic journey.
+  - sha: c6d5046f08f5937a00f05b7de94945f27857a5bc
+    changeNotes: Added "source" as a default source parameter. This will speed up integrations for the US market. 
+  - sha: 2ff034c83571e948353559cf3c3cb247d4eda759
+    changeNotes: Fixed a bug where the channel cookie would not be created when in a session based setup and in a direct journey. 
+  - sha: 5fc203f592be5c6bd481f3aa5c49e0fa6402b9e1
+    changeNotes: Fixed a bug where the channel cookie would not be created when in a session based setup and in an organic journey.
+  - sha: 6c31cf3db6ba85b1a5d78399bb52cf5bfda6f5db
+    changeNotes: Now the channel defaults to 'undefined' if no source is found
+  - sha: 747efb147e5ec24aee3a3327cdc42ef77604d447
+    changeNotes: Allowing '/' to be used in Awin Source Values
+  - sha: c196dc65d5101dff094682ecd3b763aec108313e
+    changeNotes: Fixed an issue that was causing session cookies to be recreated after the session ended.
+  - sha: c486ac95c4d677ad86499c3c4999c48e49692e13
+    changeNotes: Updated the template to check if source contains awin source value, instead of exact match.
+  - sha: 9df9b54fb065c95b1d918138bcaa05df21135f99
+    changeNotes: Changed the default value for the "Using All Pages Trigger" checkbos to false.
+  - sha: 3e33a2d2704b752903dc06ff6bf76f9e30c61a49
+    changeNotes: Added a feature for you to be able to use source trigger again, instead of all pages. If the advertiser uses a cookie consent pop-up that redirects to the website, it would cause the template to not work. If you disable the "Using All Page Trigger" checkbox now and use the source trigger instead. It should work correctly.
+  - sha: d5aee6e73438bbb78ebde46d20757fc68832f91c
+    changeNotes: Fixed a bug where the cookie would be created with a session only expiring date.
+  - sha: 078c0f4a153ee332b7f617976c890564af5ab7c5
+    changeNotes: The template is now simpler to use, just trigger it using an All Pages trigger and it will automatically decide how to proceed.
+  - sha: bcde5b2658423f892a20fc2bc615b5d9034ec028
+    changeNotes: Added the ability to use multiple Awin Source values. This way advertisers can have campaigns with multiple "utm_source" values for example, and the template will still record transactions correctly.
+  - sha: 939c4c3f13ebcf4761eae92ca914099cae7433a9
+    changeNotes: Added the ability to overwrite the cookie domain and set it manually.
+  - sha: f4f3cceb5a6ed92cd5963c3a8dbd14d3a68da77d
+    changeNotes: |2
+      Added the ability to create cookies that experie once the session is finished. Simply use 0 for the cookie length field.
+      Template will now take into consideration publishers that use Google Parallel tracking, by using the awaid parameter as a condition.
+  - sha: 8cd223d36382d35814d729f25f3b04b0c20e4207
+    changeNotes: Initial release.
